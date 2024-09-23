@@ -1,0 +1,432 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter';
+}
+
+body a {
+  font-family: 'Inter';
+  text-decoration: none;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  max-width: 375px;
+  margin-inline: auto;
+  background-color: #F8F9FB;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.hero {
+  border-top: 1px solid #EAEBF0;
+  padding: 24px 16px 24px 16px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.hero-butons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-butons a {
+  max-width: 343px;
+  border-radius: 6px;
+}
+
+.hero-butons a:first-child {
+  background-color: #437EF7;
+  padding: 12px, 129px;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.hero-butons a:last-child {
+  background-color: #FFFFFF;
+  padding: 12px, 129px;
+
+  color: #272D37;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.hero-img {
+  margin-inline: auto;
+}
+
+.section {
+  background-color: #FFFFFF;
+  padding: 32px 16px;
+}
+
+.chanel-review {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+.chanel-review-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #272D37;
+  margin-bottom: 12px;
+}
+
+.chanel-review-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #5F6D7E;
+}
+
+.chanel-review-options {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.chanel-review-option {
+  border: 1px solid #EAEBF0;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.chanel-review-option-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.chanel-review-option-top a {
+  border: 1px solid #DAE0E6;
+  border-radius: 6px;
+  padding: 12px 18px 12px 18px;
+
+  color: #272D37;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #FAFBFC;
+  padding: 32px 16px;
+}
+
+.product-features-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #272D37;
+  margin-bottom: 12px;
+}
+
+.product-features-text p { 
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #5F6D7E;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.product-feature img {
+  margin-bottom: 32px;
+}
+
+.product-feature h4 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437EF7;
+  margin-bottom: 8px;
+}
+
+.product-feature h3 {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 16px;
+}
+
+.product-feature p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+  margin-bottom: 32px;
+}
+
+.product-feature-btn {
+  display: flex;
+  gap: 6px;
+  background-color: #437EF7;
+  padding: 12px 18px;
+  border-radius: 6px;
+  width: 113px;
+  margin-bottom: 32px;
+}
+
+.product-feature-btn a {
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.blog-post-section {
+  background-color: #FFFFFF;
+  padding-inline: 16px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.blog-post-section-text {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.blog-post-section-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 12px;
+}
+
+.blog-post-section-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.blog-post {
+  border: 1px solid #EAEBF0;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  border-radius: 10px;
+}
+
+.blog-post img {
+  border-radius: 10px;
+}
+
+.blog-post-text {
+  padding-inline: 32px;
+}
+
+
+/* .blog-post :first-child {
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.blog-post :nth-child(2) {
+  position: absolute;
+  top: 160px;
+  right: 32px;
+} */
+
+.article-btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.article-btn a {
+  color: #437EF7;
+  padding: 4px 12px 4px 12px;
+  background-color: #F5FAFF;
+  border-radius: 5px;
+}
+
+.article-btn span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+
+.blog-post h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 16px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+  margin-bottom: 24px;
+}
+
+.learn-more-btn {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.learn-more-btn a {
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #437EF7;
+}
+
+.rating-secitons {
+  padding-inline: 16px;
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  background-color: #FFFFFF;
+}
+
+.rating-section-text {
+  text-align: center;
+}
+
+.rating-section-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 12px;
+}
+
+.rating-section-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+
+.rating-section-commments {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.rating-section {
+  border-bottom: 1px solid #EAEBF0;
+}
+
